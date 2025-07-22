@@ -93,9 +93,9 @@ export default function TicketPlatform() {
   const pendingTickets = tickets.filter((ticket) => ticket.status === "pending").length
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-indigo-950 to-slate-950">
+    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-gray-900 to-slate-900">
       {/* Background Pattern */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(99,102,241,0.1),transparent_50%),radial-gradient(circle_at_70%_80%,rgba(168,85,247,0.08),transparent_50%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(59,130,246,0.1),transparent_50%),radial-gradient(circle_at_70%_80%,rgba(99,102,241,0.08),transparent_50%)]"></div>
       <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(148,163,184,0.02)_1px,transparent_1px),linear-gradient(to_bottom,rgba(148,163,184,0.02)_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
 
       <div className="relative z-10 container mx-auto px-4 py-8 max-w-7xl">
@@ -103,13 +103,13 @@ export default function TicketPlatform() {
         <div className="mb-12">
           <div className="flex items-center gap-4 mb-6">
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-2xl blur-lg opacity-30"></div>
-              <div className="relative p-4 rounded-2xl bg-gradient-to-r from-indigo-500 to-purple-600 shadow-2xl">
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-2xl blur-lg opacity-30"></div>
+              <div className="relative p-4 rounded-2xl bg-gradient-to-r from-blue-500 to-indigo-600 shadow-2xl">
                 <Plane className="h-10 w-10 text-white" />
               </div>
             </div>
             <div>
-              <h1 className="text-5xl font-bold bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-2">
+              <h1 className="text-5xl font-bold bg-gradient-to-r from-white via-blue-200 to-indigo-300 bg-clip-text text-transparent mb-2">
                 AeroTicket Pro
               </h1>
               <p className="text-slate-300 text-xl font-medium">Plataforma Avançada de Gestão de Passagens Aéreas</p>
@@ -119,14 +119,14 @@ export default function TicketPlatform() {
 
         {/* Stats Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          <Card className="relative overflow-hidden bg-gradient-to-br from-indigo-500/10 via-indigo-500/5 to-transparent border-indigo-500/20 backdrop-blur-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
-            <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/5 to-transparent"></div>
+          <Card className="relative overflow-hidden bg-slate-800/60 backdrop-blur-sm border-slate-700/50 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-transparent"></div>
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-3 relative z-10">
-              <CardTitle className="text-sm font-semibold text-indigo-300 uppercase tracking-wide">
+              <CardTitle className="text-sm font-semibold text-blue-300 uppercase tracking-wide">
                 Total de Tickets
               </CardTitle>
-              <div className="p-2 rounded-lg bg-indigo-500/20">
-                <Plane className="h-5 w-5 text-indigo-400" />
+              <div className="p-2 rounded-lg bg-blue-500/20">
+                <Plane className="h-5 w-5 text-blue-400" />
               </div>
             </CardHeader>
             <CardContent className="relative z-10">
@@ -135,8 +135,8 @@ export default function TicketPlatform() {
             </CardContent>
           </Card>
 
-          <Card className="relative overflow-hidden bg-gradient-to-br from-emerald-500/10 via-emerald-500/5 to-transparent border-emerald-500/20 backdrop-blur-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
-            <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/5 to-transparent"></div>
+          <Card className="relative overflow-hidden bg-slate-800/60 backdrop-blur-sm border-slate-700/50 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
+            <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/10 to-transparent"></div>
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-3 relative z-10">
               <CardTitle className="text-sm font-semibold text-emerald-300 uppercase tracking-wide">
                 Confirmados
@@ -151,8 +151,8 @@ export default function TicketPlatform() {
             </CardContent>
           </Card>
 
-          <Card className="relative overflow-hidden bg-gradient-to-br from-amber-500/10 via-amber-500/5 to-transparent border-amber-500/20 backdrop-blur-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
-            <div className="absolute inset-0 bg-gradient-to-br from-amber-500/5 to-transparent"></div>
+          <Card className="relative overflow-hidden bg-slate-800/60 backdrop-blur-sm border-slate-700/50 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
+            <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 to-transparent"></div>
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-3 relative z-10">
               <CardTitle className="text-sm font-semibold text-amber-300 uppercase tracking-wide">Pendentes</CardTitle>
               <div className="p-2 rounded-lg bg-amber-500/20">
@@ -165,8 +165,8 @@ export default function TicketPlatform() {
             </CardContent>
           </Card>
 
-          <Card className="relative overflow-hidden bg-gradient-to-br from-purple-500/10 via-purple-500/5 to-transparent border-purple-500/20 backdrop-blur-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
-            <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 to-transparent"></div>
+          <Card className="relative overflow-hidden bg-slate-800/60 backdrop-blur-sm border-slate-700/50 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
+            <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-transparent"></div>
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-3 relative z-10">
               <CardTitle className="text-sm font-semibold text-purple-300 uppercase tracking-wide">
                 Receita Total
@@ -188,7 +188,7 @@ export default function TicketPlatform() {
         <div className="grid grid-cols-1 xl:grid-cols-3 gap-8">
           {/* Ticket List */}
           <div className="xl:col-span-2">
-            <Card className="bg-slate-900/60 border-slate-700/50 backdrop-blur-xl shadow-2xl">
+            <Card className="bg-slate-800/60 border-slate-700/50 backdrop-blur-sm shadow-2xl">
               <CardHeader className="border-b border-slate-700/50 pb-6">
                 <div className="flex items-center justify-between">
                   <div>
@@ -199,7 +199,7 @@ export default function TicketPlatform() {
                   </div>
                   <Button
                     onClick={() => setShowForm(true)}
-                    className="bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 px-6 py-3 text-base font-semibold"
+                    className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 px-6 py-3 text-base font-semibold"
                   >
                     <Plus className="h-5 w-5 mr-2" />
                     Novo Ticket
@@ -215,7 +215,7 @@ export default function TicketPlatform() {
           {/* Form Panel */}
           <div className="xl:col-span-1">
             {showForm && (
-              <Card className="bg-slate-900/60 border-slate-700/50 backdrop-blur-xl shadow-2xl sticky top-8">
+              <Card className="bg-slate-800/60 border-slate-700/50 backdrop-blur-sm shadow-2xl sticky top-8">
                 <CardHeader className="border-b border-slate-700/50 pb-6">
                   <CardTitle className="text-xl font-bold text-white">
                     {editingTicket ? "Editar Ticket" : "Novo Ticket"}

@@ -59,8 +59,8 @@ export function TicketList({ tickets, onEdit, onDelete }: TicketListProps) {
     return (
       <div className="text-center py-16">
         <div className="relative mb-6">
-          <div className="absolute inset-0 bg-gradient-to-r from-indigo-500/20 to-purple-500/20 rounded-full blur-xl"></div>
-          <div className="relative p-6 rounded-full bg-slate-800/50 border border-slate-700/50 inline-block">
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-full blur-xl"></div>
+          <div className="relative p-6 rounded-full bg-slate-700/50 border border-slate-600/50 inline-block">
             <Plane className="h-16 w-16 text-slate-400" />
           </div>
         </div>
@@ -78,16 +78,16 @@ export function TicketList({ tickets, onEdit, onDelete }: TicketListProps) {
         return (
           <Card
             key={ticket.id}
-            className="bg-slate-800/40 border-slate-600/30 hover:bg-slate-800/60 hover:border-slate-500/50 transition-all duration-300 hover:shadow-xl group"
+            className="bg-slate-700/40 border-slate-600/30 hover:bg-slate-700/60 hover:border-slate-500/50 transition-all duration-300 hover:shadow-xl group"
           >
             <CardContent className="p-6">
               {/* Header */}
               <div className="flex items-start justify-between mb-6">
                 <div className="flex items-center gap-4">
                   <div className="relative">
-                    <div className="absolute inset-0 bg-gradient-to-r from-indigo-500/30 to-purple-500/30 rounded-xl blur-sm"></div>
-                    <div className="relative p-3 rounded-xl bg-gradient-to-r from-indigo-500/20 to-purple-500/20 border border-indigo-500/30">
-                      <Plane className="h-6 w-6 text-indigo-300" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-blue-500/30 to-indigo-500/30 rounded-xl blur-sm"></div>
+                    <div className="relative p-3 rounded-xl bg-gradient-to-r from-blue-500/20 to-indigo-500/20 border border-blue-500/30">
+                      <Plane className="h-6 w-6 text-blue-300" />
                     </div>
                   </div>
                   <div>
@@ -102,7 +102,7 @@ export function TicketList({ tickets, onEdit, onDelete }: TicketListProps) {
                       variant="ghost"
                       size="sm"
                       onClick={() => onEdit(ticket)}
-                      className="text-indigo-400 hover:text-indigo-300 hover:bg-indigo-500/10 border border-transparent hover:border-indigo-500/30"
+                      className="text-blue-400 hover:text-blue-300 hover:bg-blue-500/10 border border-transparent hover:border-blue-500/30"
                     >
                       <Edit className="h-4 w-4" />
                     </Button>
@@ -119,7 +119,7 @@ export function TicketList({ tickets, onEdit, onDelete }: TicketListProps) {
               </div>
 
               {/* Route */}
-              <div className="flex items-center justify-between mb-6 p-4 rounded-xl bg-slate-700/30 border border-slate-600/30">
+              <div className="flex items-center justify-between mb-6 p-4 rounded-xl bg-slate-600/30 border border-slate-500/30">
                 <div className="text-center">
                   <div className="text-lg font-bold text-white mb-1">{ticket.origin}</div>
                   <div className="text-sm text-slate-400">{formatTime(ticket.departureTime)}</div>
@@ -137,14 +137,14 @@ export function TicketList({ tickets, onEdit, onDelete }: TicketListProps) {
 
               {/* Details */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-                <div className="flex items-center gap-3 p-3 rounded-lg bg-slate-700/20">
+                <div className="flex items-center gap-3 p-3 rounded-lg bg-slate-600/20">
                   <Clock className="h-5 w-5 text-slate-400" />
                   <div>
                     <div className="text-sm text-slate-400">Data de Partida</div>
                     <div className="text-white font-medium">{formatDate(ticket.departureTime)}</div>
                   </div>
                 </div>
-                <div className="flex items-center gap-3 p-3 rounded-lg bg-slate-700/20">
+                <div className="flex items-center gap-3 p-3 rounded-lg bg-slate-600/20">
                   <MapPin className="h-5 w-5 text-slate-400" />
                   <div>
                     <div className="text-sm text-slate-400">Assento</div>

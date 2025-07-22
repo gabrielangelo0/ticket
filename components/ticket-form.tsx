@@ -69,7 +69,7 @@ export function TicketForm({ ticket, onSubmit, onCancel }: TicketFormProps) {
     <form onSubmit={handleSubmit} className="space-y-6">
       {/* Flight Info */}
       <div className="space-y-4">
-        <h4 className="text-sm font-semibold text-slate-300 uppercase tracking-wide border-b border-slate-700/50 pb-2">
+        <h4 className="text-sm font-semibold text-slate-300 uppercase tracking-wide border-b border-slate-600/50 pb-2">
           Informações do Voo
         </h4>
         <div className="grid grid-cols-2 gap-4">
@@ -83,7 +83,7 @@ export function TicketForm({ ticket, onSubmit, onCancel }: TicketFormProps) {
               onChange={(e) => handleChange("flightNumber", e.target.value)}
               placeholder="Ex: AZ-2024"
               required
-              className="bg-slate-800/50 border-slate-600/50 text-white placeholder:text-slate-400 focus:border-indigo-500 focus:ring-indigo-500/20"
+              className="bg-slate-700/50 border-slate-600/50 text-white placeholder:text-slate-400 focus:border-blue-500 focus:ring-blue-500/20"
             />
           </div>
           <div className="space-y-2">
@@ -96,7 +96,7 @@ export function TicketForm({ ticket, onSubmit, onCancel }: TicketFormProps) {
               onChange={(e) => handleChange("airline", e.target.value)}
               placeholder="Ex: AeroZen"
               required
-              className="bg-slate-800/50 border-slate-600/50 text-white placeholder:text-slate-400 focus:border-indigo-500 focus:ring-indigo-500/20"
+              className="bg-slate-700/50 border-slate-600/50 text-white placeholder:text-slate-400 focus:border-blue-500 focus:ring-blue-500/20"
             />
           </div>
         </div>
@@ -104,7 +104,7 @@ export function TicketForm({ ticket, onSubmit, onCancel }: TicketFormProps) {
 
       {/* Route Info */}
       <div className="space-y-4">
-        <h4 className="text-sm font-semibold text-slate-300 uppercase tracking-wide border-b border-slate-700/50 pb-2">
+        <h4 className="text-sm font-semibold text-slate-300 uppercase tracking-wide border-b border-slate-600/50 pb-2">
           Rota
         </h4>
         <div className="grid grid-cols-2 gap-4">
@@ -118,7 +118,7 @@ export function TicketForm({ ticket, onSubmit, onCancel }: TicketFormProps) {
               onChange={(e) => handleChange("origin", e.target.value)}
               placeholder="Ex: São Paulo"
               required
-              className="bg-slate-800/50 border-slate-600/50 text-white placeholder:text-slate-400 focus:border-indigo-500 focus:ring-indigo-500/20"
+              className="bg-slate-700/50 border-slate-600/50 text-white placeholder:text-slate-400 focus:border-blue-500 focus:ring-blue-500/20"
             />
           </div>
           <div className="space-y-2">
@@ -131,7 +131,7 @@ export function TicketForm({ ticket, onSubmit, onCancel }: TicketFormProps) {
               onChange={(e) => handleChange("destination", e.target.value)}
               placeholder="Ex: Rio de Janeiro"
               required
-              className="bg-slate-800/50 border-slate-600/50 text-white placeholder:text-slate-400 focus:border-indigo-500 focus:ring-indigo-500/20"
+              className="bg-slate-700/50 border-slate-600/50 text-white placeholder:text-slate-400 focus:border-blue-500 focus:ring-blue-500/20"
             />
           </div>
         </div>
@@ -139,7 +139,7 @@ export function TicketForm({ ticket, onSubmit, onCancel }: TicketFormProps) {
 
       {/* Time Info */}
       <div className="space-y-4">
-        <h4 className="text-sm font-semibold text-slate-300 uppercase tracking-wide border-b border-slate-700/50 pb-2">
+        <h4 className="text-sm font-semibold text-slate-300 uppercase tracking-wide border-b border-slate-600/50 pb-2">
           Horários
         </h4>
         <div className="grid grid-cols-2 gap-4">
@@ -153,7 +153,7 @@ export function TicketForm({ ticket, onSubmit, onCancel }: TicketFormProps) {
               value={formData.departureTime}
               onChange={(e) => handleChange("departureTime", e.target.value)}
               required
-              className="bg-slate-800/50 border-slate-600/50 text-white focus:border-indigo-500 focus:ring-indigo-500/20"
+              className="bg-slate-700/50 border-slate-600/50 text-white focus:border-blue-500 focus:ring-blue-500/20"
             />
           </div>
           <div className="space-y-2">
@@ -166,7 +166,7 @@ export function TicketForm({ ticket, onSubmit, onCancel }: TicketFormProps) {
               value={formData.arrivalTime}
               onChange={(e) => handleChange("arrivalTime", e.target.value)}
               required
-              className="bg-slate-800/50 border-slate-600/50 text-white focus:border-indigo-500 focus:ring-indigo-500/20"
+              className="bg-slate-700/50 border-slate-600/50 text-white focus:border-blue-500 focus:ring-blue-500/20"
             />
           </div>
         </div>
@@ -174,7 +174,7 @@ export function TicketForm({ ticket, onSubmit, onCancel }: TicketFormProps) {
 
       {/* Passenger Info */}
       <div className="space-y-4">
-        <h4 className="text-sm font-semibold text-slate-300 uppercase tracking-wide border-b border-slate-700/50 pb-2">
+        <h4 className="text-sm font-semibold text-slate-300 uppercase tracking-wide border-b border-slate-600/50 pb-2">
           Informações do Passageiro
         </h4>
         <div className="space-y-2">
@@ -187,14 +187,14 @@ export function TicketForm({ ticket, onSubmit, onCancel }: TicketFormProps) {
             onChange={(e) => handleChange("passengerName", e.target.value)}
             placeholder="Ex: Maria Silva"
             required
-            className="bg-slate-800/50 border-slate-600/50 text-white placeholder:text-slate-400 focus:border-indigo-500 focus:ring-indigo-500/20"
+            className="bg-slate-700/50 border-slate-600/50 text-white placeholder:text-slate-400 focus:border-blue-500 focus:ring-blue-500/20"
           />
         </div>
       </div>
 
       {/* Additional Info */}
       <div className="space-y-4">
-        <h4 className="text-sm font-semibold text-slate-300 uppercase tracking-wide border-b border-slate-700/50 pb-2">
+        <h4 className="text-sm font-semibold text-slate-300 uppercase tracking-wide border-b border-slate-600/50 pb-2">
           Detalhes Adicionais
         </h4>
         <div className="grid grid-cols-3 gap-4">
@@ -208,7 +208,7 @@ export function TicketForm({ ticket, onSubmit, onCancel }: TicketFormProps) {
               onChange={(e) => handleChange("seatNumber", e.target.value)}
               placeholder="Ex: 12A"
               required
-              className="bg-slate-800/50 border-slate-600/50 text-white placeholder:text-slate-400 focus:border-indigo-500 focus:ring-indigo-500/20"
+              className="bg-slate-700/50 border-slate-600/50 text-white placeholder:text-slate-400 focus:border-blue-500 focus:ring-blue-500/20"
             />
           </div>
           <div className="space-y-2">
@@ -223,7 +223,7 @@ export function TicketForm({ ticket, onSubmit, onCancel }: TicketFormProps) {
               onChange={(e) => handleChange("price", e.target.value)}
               placeholder="299.99"
               required
-              className="bg-slate-800/50 border-slate-600/50 text-white placeholder:text-slate-400 focus:border-indigo-500 focus:ring-indigo-500/20"
+              className="bg-slate-700/50 border-slate-600/50 text-white placeholder:text-slate-400 focus:border-blue-500 focus:ring-blue-500/20"
             />
           </div>
           <div className="space-y-2">
@@ -231,7 +231,7 @@ export function TicketForm({ ticket, onSubmit, onCancel }: TicketFormProps) {
               Status
             </Label>
             <Select value={formData.status} onValueChange={(value) => handleChange("status", value)}>
-              <SelectTrigger className="bg-slate-800/50 border-slate-600/50 text-white focus:border-indigo-500 focus:ring-indigo-500/20">
+              <SelectTrigger className="bg-slate-700/50 border-slate-600/50 text-white focus:border-blue-500 focus:ring-blue-500/20">
                 <SelectValue />
               </SelectTrigger>
               <SelectContent className="bg-slate-800 border-slate-600">
@@ -251,10 +251,10 @@ export function TicketForm({ ticket, onSubmit, onCancel }: TicketFormProps) {
       </div>
 
       {/* Actions */}
-      <div className="flex gap-3 pt-6 border-t border-slate-700/50">
+      <div className="flex gap-3 pt-6 border-t border-slate-600/50">
         <Button
           type="submit"
-          className="flex-1 bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white font-semibold py-3 shadow-lg hover:shadow-xl transition-all duration-300"
+          className="flex-1 bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-semibold py-3 shadow-lg hover:shadow-xl transition-all duration-300"
         >
           {ticket ? "Atualizar Ticket" : "Criar Ticket"}
         </Button>
